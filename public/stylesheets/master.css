@@ -1,0 +1,88 @@
+/* CSS FOR POST MAIN PAGE start*/
+
+header{
+    text-align:center;
+    font-size:30px;
+}
+body{
+    width:700px;
+    margin:auto;
+}
+h1{
+    color:blue;
+}
+h2 {
+    text-align:center;
+}
+footer {
+    text-align:center;
+    border-top:2px solid black;
+    padding-top: 30px;
+}
+.index {
+    margin:auto;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:15px;
+    padding-right:15px;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    background-color:#93B5E8
+}
+#grid:nth-child(odd) {
+    background: #C2CFE3
+}
+#postDiv {
+    padding-top:20px;
+}
+.posts .index .header span {
+    width:90px;
+    float:right;
+}
+.posts .index .header {
+    background-color:whitesmoke;
+    margin:0;
+    font-weight:bold;
+}
+
+/* CSS FOR POST MAIN PAGE end*/
+
+/* CSS FOR SHOW PAGE start */
+
+h3 {
+    background-color:bisque;
+}
+.tools form {
+   display:inline;
+}
+.wrapper {
+    display:grid;
+    grid-template-columns: auto 98px 98px
+}
+.time {
+    border:1px;
+    border-style: solid;
+    border-color:black;
+    margin: 1px;
+}
+
+/* CSS FOR SHOW PAGE end */
+
+/* CSS FOR EDIT PAGE start */
+
+.posts_form {
+    margin:0 auto;
+    width:500px;
+    text-align:left;
+}
+.posts_form input {
+    width:100%;
+}
+.posts_form textarea {
+    width:100%;
+    height:150px;
+}
+
+/* CSS FOR SHOW PAGE end */
