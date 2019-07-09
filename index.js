@@ -129,7 +129,7 @@ app.post('/users', checkUserRegValidation, function(req, res, next){
         res.redirect('/login');
     });
 }); // create
-app.get('/user/:id', function(req,res){
+app.get('/users/:id', function(req,res){
     User.findById(req.params.id, function(err, user){
         if(err) return res.json({success:false, message:err});
         res.render("users/show", {user: user});
@@ -153,7 +153,7 @@ app.put('/users/:id', checkUserRegValidation, function(req, res){
         if(err) return res.json({success:"false", message:err});
         if(req.body.user.password == user.password){
             if(req.body.user.newPassword){
-                res.body.user.password=req.body.user.newPassword;
+                req.body.user.password=req.body.user.newPassword;
             } else {
                 delete req.body.user.password;
             }
