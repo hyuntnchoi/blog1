@@ -23,13 +23,13 @@
             <% } %>
             <div id="postDiv">
               <p class="header"> Title <span>Date</span><span>Author</span></p>
-              <% data.forEach(function(e){ %>
+              <% posts.forEach(function(post){ %>
                 <li id="grid">
                     <div>
-                      <a href="/posts/<%= e._id %>"><%= e.title %></a>
+                      <a href="/posts/<%= post._id %>"><%= post.title %></a>
                     </div>
-                    <div><%= e.author.nickname %></div>
-                    <div><%= e.createdAt.toLocaleDateString() %></div>
+                    <div><%= post.author.nickname %></div>
+                    <div><%= post.createdAt.toLocaleDateString() %></div>
                 </li>
               <% }) %>
             </div>
