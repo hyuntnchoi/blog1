@@ -28,7 +28,7 @@ footer {
 }
 #grid {
     display:grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr;
     background-color:#93B5E8
 }
 #grid:nth-child(odd) {

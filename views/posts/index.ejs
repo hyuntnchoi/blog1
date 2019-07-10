@@ -22,12 +22,13 @@
                 <a href="/users/new" class="float_right"><button>Sign Up</button></a>
             <% } %>
             <div id="postDiv">
-              <p class="header"> Title <span>Date</span></p>
+              <p class="header"> Title <span>Date</span><span>Author</span></p>
               <% data.forEach(function(e){ %>
                 <li id="grid">
                     <div>
                       <a href="/posts/<%= e._id %>"><%= e.title %></a>
                     </div>
+                    <div><%= e.author.nickname %></div>
                     <div><%= e.createdAt.toLocaleDateString() %></div>
                 </li>
               <% }) %>
