@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 // database
-mongoose.connect(process.env.MONGO_DB, { useNewUrlParser: true });
+// mongoose.connect(process.env.MONGO_DB, { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://hyuntn0724:msk040528@cluster0-dnbrp.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 var db = mongoose.connection;
 db.once("open", function(){
     console.log("DB connected!");
