@@ -39,6 +39,7 @@ app.use('/posts', require('./routes/posts'));
 app.use('/users', require('./routes/users'));
 
 // start server
-app.listen(1000, function(){
+var port = process.env.PORT || 1000;
+app.listen(port, function(){
     console.log('Server On!');
 });
