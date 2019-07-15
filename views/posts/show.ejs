@@ -33,13 +33,13 @@
         
         <% if(user && user.equals(post.author._id)) { %>
         <div class="tools">
-            <a href="/posts/<%=post._id%>/edit"><button>Edit</button></a>
+            <a href="/posts/<%=post._id%>/edit"><button class="btn btn-success btn-sm">Edit</button></a>
             <form class="btn_delete" action="/posts/<%=post._id%>?_method=delete" method="post">
-                <button type="submit">Delete</button>
+                <button type="submit" class="btn btn-success btn-sm">Delete</button>
             </form>
         </div>
         <% } %>
-        <a href="/posts"><button>Back</button></a>
+        <a href="/posts"><button class="btn btn-success btn-sm">Back</button></a>
     </div>
     
     <!-- main end -->
